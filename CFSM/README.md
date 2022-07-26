@@ -1,6 +1,6 @@
 # Controllable Face Synthesis Model (CFSM)
 
-<img src="docs/teaser.png" width="700px" />
+<center><img src="docs/teaser.png" width="700px" /></center>
 
 Given an input face image, our CFSM enables precise control of the direction and magnitude of the targeted styles in the generated images. The latent style has both the direction and the magnitude, where the direction linearly combines the learned bases to control the type of style, while the magnitude controls the degree of style. 
 
