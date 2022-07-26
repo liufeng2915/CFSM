@@ -22,7 +22,7 @@ This code is developed with
 * Pytorch 1.8
 * Cuda 11.1 
 
-## Stage1: Controllable Face Synthesis Module (CFSM)
+## Stage1: Controllable Face Synthesis Model (CFSM)
 
 Please refer to [CFSM/README](CFSM/README.md) for the details.
 
