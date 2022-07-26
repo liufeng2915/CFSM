@@ -24,7 +24,7 @@ This code is developed with
 
 ## Stage1: Controllable Face Synthesis Module (CFSM)
 
-Please refer to [CFSM/README](CFSMREADME.md) for the details.
+Please refer to [CFSM/README](CFSM/README.md) for the details.
 
 ## Stage2: Guided Face Synthesis for Face Recognition 
 
