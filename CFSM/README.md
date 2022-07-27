@@ -10,12 +10,12 @@ To visualize for the face synthesis model, we provide trained models which are r
 
 | Target Datasets | Weights                                                      |
 | --------------- | ------------------------------------------------------------ |
-| LFW             | [gdrive](https://drive.google.com/file/d/1uSgdAX_C8bAno2y9V5gwa8ITRtQxmVE1/view?usp=sharing) |
-| AgeDB-30        | [gdrive](https://drive.google.com/file/d/1074cg1kV5uku2DoQdZONyoehT4R1reaf/view?usp=sharing) |
-| CFP-FP          | [gdrive](https://drive.google.com/file/d/19GOGU2FkOFY7QsgbpyoC0wYTApXEdGzJ/view?usp=sharing) |
-| IJB-B           | [gdrive](https://drive.google.com/file/d/1TSxUxNkdI4paFESHwnIxE6DfNWF0XqCg/view?usp=sharing) |
-| WiderFace (WF)  | [gdrive](https://drive.google.com/file/d/163cBsS3n7gI-2iIWFu2rlaPPmDtMYGH4/view?usp=sharing) |
-| IJB-S           | [gdrive](https://drive.google.com/file/d/1jFTnZcguO-HYeFXfFyn9-qOLY3sgCxhs/view?usp=sharing) |
+| LFW             | [gdrive](https://drive.google.com/file/d/1uSgdAX_C8bAno2y9V5gwa8ITRtQxmVE1/view?usp=sharing), [baidudrive]() |
+| AgeDB-30        | [gdrive](https://drive.google.com/file/d/1074cg1kV5uku2DoQdZONyoehT4R1reaf/view?usp=sharing), [baidudrive]() |
+| CFP-FP          | [gdrive](https://drive.google.com/file/d/19GOGU2FkOFY7QsgbpyoC0wYTApXEdGzJ/view?usp=sharing), [baidudrive]() |
+| IJB-B           | [gdrive](https://drive.google.com/file/d/1TSxUxNkdI4paFESHwnIxE6DfNWF0XqCg/view?usp=sharing), [baidudrive]() |
+| WiderFace (WF)  | [gdrive](https://drive.google.com/file/d/163cBsS3n7gI-2iIWFu2rlaPPmDtMYGH4/view?usp=sharing), [baidudrive]() |
+| IJB-S           | [gdrive](https://drive.google.com/file/d/1jFTnZcguO-HYeFXfFyn9-qOLY3sgCxhs/view?usp=sharing), [baidudrive]() |
 
 ## Demo
 
