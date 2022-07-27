@@ -21,7 +21,7 @@ To visualize for the face synthesis model, we provide trained models which are r
 
 <center><img src="docs/demo.png" width="700px" /></center>
 
-We provide an interface for interactive editing based on [StreamLit](https://www.streamlit.io/) (inspired from [here](https://github.com/genforce/sefa)). This interface can be launched with
+We provide an interface for interactive synthesis based on [StreamLit](https://www.streamlit.io/) (inspired from [here](https://github.com/genforce/sefa)). This interface can be launched with
 
 ```
 pip install streamlit

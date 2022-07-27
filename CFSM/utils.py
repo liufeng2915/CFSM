@@ -4,7 +4,19 @@ import os
 from collections import namedtuple
 import torch
 from torch.nn import Conv2d, BatchNorm2d, PReLU, ReLU, Sigmoid, MaxPool2d, AdaptiveAvgPool2d, Sequential, Module
+from synthesis_network import *
 
+
+def to_tensor(array):
+    assert isinstance(array, np.ndarray)
+    return torch.from_numpy(array).type(torch.FloatTensor).cuda()
+
+def load_generator(model_name):
+    model = Generator(dim=64, n_downsample=2, n_residual=3, style_dim=10, latent_dim=128)
+    model_dict = torch.load('pretrained_model/'+model_name+'.pth')
+    model.load_state_dict(model_dict['G_state_dict'])
+    model.eval()
+    return model.cuda()
 
 def sample_images(logs_dir, model_name, source_img, target_img, syn_img, epoch, data_idx):
     """Saves generated samples"""
