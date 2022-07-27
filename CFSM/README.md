@@ -7,7 +7,7 @@ Given an input face image, our CFSM enables precise control of the direction and
 ## Training
 
 * Please download the released ArcFace model [here](https://drive.google.com/file/d/1GZjPokFv5zXIxol3eZnuByJ0iwDv8inQ/view?usp=sharing) and place it in "/id_weights".
-* Prepare the source and target data, and place in "/data"
+* Prepare the source and target data, and place in "/data".
 * Train the model:
 
 ```bash
