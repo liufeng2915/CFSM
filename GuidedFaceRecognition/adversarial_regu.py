@@ -8,20 +8,20 @@ def adversarial_img_augmentation(cfg, synthesis, backbone, module_partial_fc, im
 
     # Projected Gradient Descent (PGD) is a multi-step multi-step variant Fast Gradient Sign Method (FGSM)
     # when k=1, 
-    sampled_z = Variable(torch.FloatTensor(np.random.normal(0, 1, (cfg.batch_size, 10))))
-    sampled_z = sampled_z.cuda(non_blocking=True)
-    z = sampled_z.detach()
+    sampled_o = Variable(torch.FloatTensor(np.random.normal(0, 1, (cfg.batch_size, 10))))
+    sampled_o = sampled_o.cuda(non_blocking=True)
+    o = sampled_o.detach()
     for it in range(cfg.k):
-        z.requires_grad_()
-        _,updated_img,_ = synthesis(img, z)
+        o.requires_grad_()
+        _,updated_img,_ = synthesis(img, o)
         with torch.enable_grad():
-            local_lq_embeddings = backbone(updated_img)
-            lq_loss: torch.Tensor = module_partial_fc(local_lq_embeddings, local_labels, opt)
-            grad = torch.autograd.grad(lq_loss, [z])[0]
-            z = z.detach() + cfg.alpha * torch.sign(grad.detach())
-            z = torch.min(torch.max(z, sampled_z - cfg.epsilon), sampled_z + cfg.epsilon)
+            local_embeddings = backbone(updated_img)
+            loss: torch.Tensor = module_partial_fc(local_embeddings, local_labels, opt)
+            grad = torch.autograd.grad(loss, [o])[0]
+            o = o.detach() + cfg.alpha * torch.sign(grad.detach())
+            o = torch.min(torch.max(o, sampled_o - cfg.epsilon), sampled_o + cfg.epsilon)
 
-    _,syn_img,_ = synthesis(img, z)
+    _,syn_img,_ = synthesis(img, o)
 
     ## the ratio of real and synthetic images in a mini-batch
     batch_size = img.shape[0]
