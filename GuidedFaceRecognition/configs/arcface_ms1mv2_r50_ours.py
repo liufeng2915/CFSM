@@ -29,7 +29,6 @@ config.val_targets = ['lfw', 'cfp_fp', "agedb_30"]
 
 config.rs_ratio = 0.75
 config.pretrained_synthesis_model = "./pretrained_CFSM/WiderFace70K.pth"
-config.init_mag_factor = 1.0
 config.epsilon = 0.314   
 config.alpha = 0.314     
 config.k = 1
