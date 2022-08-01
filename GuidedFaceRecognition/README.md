@@ -31,8 +31,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
   | :----------- | ---- | ------------- | -------------- | ------------- | ------------ | ----- | ----- |
   | ArcFace      | R50  | MS1MV2        | 87.26          | 94.01         | 95.95        | 94.61 | 96.52 |
   | ArcFace+CFSM | R50  | MS1MV2        | 90.95          | 94.61         | 96.21        | 94.96 | 96.84 |
-  | AdaFace      | R100 | WebFace12M    |                |               |              |       |       |
-  | AdaFace+CFSM | R100 | WebFace12M    |                |               |              |       |       |
 
 * IJB-C dataset
 
@@ -40,8 +38,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
   | :----------- | ---- | ------------- | --------------- | -------------- | ------------- | ----- | ----- |
   | ArcFace      | R50  | MS1MV2        | 87.24           | 93.32          | 95.61         | 95.89 | 97.08 |
   | ArcFace+CFSM | R50  | MS1MV2        | 89.34           | 94.06          | 95.90         | 96.31 | 97.48 |
-  | AdaFace      | R100 | WebFace12M    |                 |                |               |       |       |
-  | AdaFace+CFSM | R100 | WebFace12M    |                 |                |               |       |       |
 
 * TinyFace
 
