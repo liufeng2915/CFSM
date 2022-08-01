@@ -18,10 +18,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
 
 ## Pretrained Models
 
-| Method       | Arch | Train Datasets | Link                                                         |
-| ------------ | ---- | -------------- | ------------------------------------------------------------ |
-| ArcFace+CFSM | R50  | MS1MV2         | [gdrive](https://drive.google.com/file/d/1RGKYYYZQ5lu_aagVwBV-Dso70wGru936/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/17LRveDdXk7Zmdye-mrdc_g) (wyiv) |
-| AdaFace+CFSM | R100 | WebFace12M     | [gdrive](https://drive.google.com/file/d/1QBk6oBIE5HlW5MDXsHNxcY0JTs_jDRx4/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/1_2Tn0tlbfOmH-99qjKH-wA) (hatp) |
+| Method                                                       | Arch | Train Datasets | Link                                                         |
+| ------------------------------------------------------------ | ---- | -------------- | ------------------------------------------------------------ |
+| [ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch)+CFSM | R50  | MS1MV2         | [gdrive](https://drive.google.com/file/d/1RGKYYYZQ5lu_aagVwBV-Dso70wGru936/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/17LRveDdXk7Zmdye-mrdc_g) (wyiv) |
+| [AdaFace](https://github.com/mk-minchul/AdaFace)+CFSM        | R100 | WebFace12M     | [gdrive](https://drive.google.com/file/d/1QBk6oBIE5HlW5MDXsHNxcY0JTs_jDRx4/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/1_2Tn0tlbfOmH-99qjKH-wA) (hatp) |
 
 ## Validation
 
