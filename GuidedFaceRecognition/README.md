@@ -18,10 +18,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
 
 ## Pretrained Models
 
-| Method                                                       | Arch | Train Datasets | Link                                                         |
-| ------------------------------------------------------------ | ---- | -------------- | ------------------------------------------------------------ |
-| [ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch)+CFSM | R50  | MS1MV2         | [gdrive](https://drive.google.com/file/d/1RGKYYYZQ5lu_aagVwBV-Dso70wGru936/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/17LRveDdXk7Zmdye-mrdc_g) (wyiv) |
-| [AdaFace](https://github.com/mk-minchul/AdaFace)+CFSM        | R100 | WebFace12M     | [gdrive](https://drive.google.com/file/d/1QBk6oBIE5HlW5MDXsHNxcY0JTs_jDRx4/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/1_2Tn0tlbfOmH-99qjKH-wA) (hatp) |
+| Method                                                       | Arch | Train Dataset | Link                                                         |
+| ------------------------------------------------------------ | ---- | ------------- | ------------------------------------------------------------ |
+| [ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch)+CFSM | R50  | MS1MV2        | [gdrive](https://drive.google.com/file/d/1RGKYYYZQ5lu_aagVwBV-Dso70wGru936/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/17LRveDdXk7Zmdye-mrdc_g) (wyiv) |
+| [AdaFace](https://github.com/mk-minchul/AdaFace)+CFSM        | R100 | WebFace12M    | [gdrive](https://drive.google.com/file/d/1QBk6oBIE5HlW5MDXsHNxcY0JTs_jDRx4/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/1_2Tn0tlbfOmH-99qjKH-wA) (hatp) |
 
 ## Validation
 
@@ -53,6 +53,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
 | Method       | Arch | Train Dataset | V2S Rank1 | V2S Rank5 | V2S 1% | V2S 10% | V2B Rank1 | V2B Rank5 | V2B 1% | V2B 10% | V2V Rank1 | V2V Rank5 | V2V 1% | V2V 10% |
 | ------------ | ---- | ------------- | --------- | --------- | ------ | ------- | --------- | --------- | ------ | ------- | --------- | --------- | ------ | ------- |
 | ArcFace      | R50  | MS1MV2        | 58.78     | 66.40     | 40.99  | 50.45   | 60.66     | 67.43     | 43.12  | 51.38   | 14.81     | 26.72     | 2.51   | 5.72    |
-| ArcFace+CFSM | R50  | MS1MV2        | 63.86     | 69.95     | 47.86  | 56.44   | 65.95     | 71.16     | 47.28  | 57.24   | 21.38     | 35.11     | 2.96   | 11.84   |
+| ArcFace+CFSM | R50  | MS1MV2        | 63.86     | 69.95     | 47.86  | 56.44   | 65.95     | 71.16     | 47.28  | 57.24   | 21.38     | 35.11     | 2.96   | 7.41    |
 | AdaFace      | R100 | WebFace12M    | 71.35     | 76.24     | 59.40  | 66.34   | 71.93     | 76.56     | 59.37  | 66.68   | 36.71     | 50.03     | 4.62   | 11.84   |
 | AdaFace+CFSM | R100 | WebFace12M    | 72.54     | 77.59     | 60.94  | 66.02   | 72.65     | 78.18     | 60.26  | 65.88   | 39.14     | 50.91     | 5.05   | 13.17   |
