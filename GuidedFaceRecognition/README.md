@@ -20,8 +20,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
 
 | Method       | Arch | Train Datasets | Link                                                         |
 | ------------ | ---- | -------------- | ------------------------------------------------------------ |
-| ArcFace+CFSM | R50  | MS1MV2         | [gdrive](https://drive.google.com/file/d/1RGKYYYZQ5lu_aagVwBV-Dso70wGru936/view?usp=sharing), [baidudrive]() |
-| AdaFace+CFSM | R100 | WebFace12M     | [gdrive](https://drive.google.com/file/d/1QBk6oBIE5HlW5MDXsHNxcY0JTs_jDRx4/view?usp=sharing), [baidudrive]() |
+| ArcFace+CFSM | R50  | MS1MV2         | [gdrive](https://drive.google.com/file/d/1RGKYYYZQ5lu_aagVwBV-Dso70wGru936/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/1FHurBvkMww6VwOEpGoQYqA) (qhc4) |
+| AdaFace+CFSM | R100 | WebFace12M     | [gdrive](https://drive.google.com/file/d/1QBk6oBIE5HlW5MDXsHNxcY0JTs_jDRx4/view?usp=sharing), [baidudrive](https://pan.baidu.com/s/1_2Tn0tlbfOmH-99qjKH-wA) (hatp) |
 
 ## Validation
 
@@ -39,7 +39,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
   | ArcFace      | R50  | MS1MV2        | 87.24           | 93.32          | 95.61         | 95.89 | 97.08 |
   | ArcFace+CFSM | R50  | MS1MV2        | 89.34           | 94.06          | 95.90         | 96.31 | 97.48 |
 
-* TinyFace
+* TinyFace dataset
 
   | Method       | Arch | Train Dataset | Rank1 | Rank5 |
   | :----------- | ---- | ------------- | ----- | ----- |
