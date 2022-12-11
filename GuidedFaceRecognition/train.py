@@ -10,7 +10,7 @@ from backbones import get_model
 from dataset import get_dataloader
 from torch.utils.data import DataLoader
 from lr_scheduler import PolyScheduler
-from losses import CosFace, ArcFace
+from losses import AdaFace, ArcFace
 from partial_fc import PartialFC
 from utils.utils_callbacks import CallBackLogging, CallBackVerification
 from utils.utils_config import get_config
@@ -68,8 +68,8 @@ def main(args):
 
     if cfg.loss == "arcface":
         margin_loss = ArcFace()
-    elif cfg.loss == "cosface":
-        margin_loss = CosFace()
+    elif cfg.loss == "adaface":
+        margin_loss = AdaFace()
     else:
         raise
 
@@ -119,10 +119,6 @@ def main(args):
         batch_size=cfg.batch_size,
         writer=summary_writer
     )
-
-    #
-    sample_path = cfg.output + '/sample/'
-    os.makedirs(sample_path, exist_ok=True)
 
     loss_am = AverageMeter()
     start_epoch = 0
