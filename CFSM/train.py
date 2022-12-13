@@ -135,7 +135,7 @@ for epoch in range(opt.epoch, opt.n_epochs):
         optimizer_G.zero_grad()
 
         # Produce output using sampled z
-        if (i%2) == 0:
+        if ((epoch+i)%2) == 0:
             sampled_z = Variable(torch.FloatTensor(np.random.normal(0, 1, (source_img.size(0), opt.style_dim)))).cuda()
             z_norm = torch.norm(sampled_z, dim=1, keepdim=True)
             target_cosine_dis = (z_norm-opt.la)*(opt.um-opt.lm)/(opt.ua-opt.la) + opt.lm
