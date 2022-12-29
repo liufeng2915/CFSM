@@ -16,7 +16,13 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch \
 --master_port=12348 train.py configs/arcface_ms1mv2_r50_ours
 ```
 
-## Pretrained Models
+## trained Models
+
+* Pre-trained synthesis model
+
+  The synthesis model for face recognition model training is trained with 70K face images from WiderFace as the target data.
+
+* Trained recognition models
 
 | Method                                                       | Arch | Train Dataset | Link                                                         |
 | ------------------------------------------------------------ | ---- | ------------- | ------------------------------------------------------------ |
